@@ -4,6 +4,7 @@ import moment from "moment-hijri";
 import Header from "./components/Header/Header";
 import Times from "./components/Times/Times";
 import Weather from "./components/Weather/Weather";
+import Dua from "./components/Dua/Dua";
 
 function App() {
   const [seconds, setSeconds] = React.useState(0);
@@ -35,6 +36,7 @@ function App() {
       <Header time={time} dayOfWeek={dayOfWeek} date={date} hijri={hijri} />
       <Times />
       <Weather dayOfWeek={dayOfWeek} date={date} />
+      <Dua />
     </div>
   );
 }

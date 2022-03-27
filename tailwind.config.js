@@ -10,6 +10,9 @@ module.exports = {
         secondaryLight: "#feeabf",
         secondaryDark: "#fba72d",
       },
+      backgroundImage: {
+        hand: "url('https://img.icons8.com/external-color-outline-adri-ansyah/64/000000/external-islam-islam-and-ramadhan-color-outline-adri-ansyah-18.png')",
+      },
     },
   },
   plugins: [],
