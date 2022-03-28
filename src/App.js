@@ -63,7 +63,7 @@ function App() {
   // console.log(geoLocation);
   return (
     <div className="">
-      <div className="container mx-auto p-5 bg-blue-50">
+      <div className="">
         <Routes>
           <Route
             path="/"
@@ -80,7 +80,6 @@ function App() {
           <Route path="/mosque" element={<Mosque />} />
         </Routes>
       </div>
-      <BottomMenu />
     </div>
   );
 }
