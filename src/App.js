@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Times from "./components/Times/Times";
 import Weather from "./components/Weather/Weather";
 import Dua from "./components/Dua/Dua";
+import Categories from "./components/Categories/Categories";
 
 function App() {
   const [seconds, setSeconds] = React.useState(0);
@@ -37,6 +38,7 @@ function App() {
       <Times />
       <Weather dayOfWeek={dayOfWeek} date={date} />
       <Dua />
+      <Categories />
     </div>
   );
 }
