@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Categories = () => {
   return (
@@ -14,7 +15,10 @@ const Categories = () => {
             Prayer Time
           </h3>
         </div>
-        <div className="min-w-[30%] bg-white flex flex-col justify-center items-center p-4 rounded-2xl shadow-md shadow-gray-200">
+        <NavLink
+          to="/mosque"
+          className="min-w-[30%] bg-white flex flex-col justify-center items-center p-4 rounded-2xl shadow-md shadow-gray-200"
+        >
           <img
             src="https://img.icons8.com/external-color-outline-adri-ansyah/40/000000/external-islam-islam-and-ramadhan-color-outline-adri-ansyah-25.png"
             alt="Mosque"
@@ -22,7 +26,7 @@ const Categories = () => {
           <h3 className="text-xs text-center font-semibold pt-4">
             Nearest Mosque
           </h3>
-        </div>
+        </NavLink>
         <div className="min-w-[30%] bg-white flex flex-col justify-center items-center p-4 rounded-2xl shadow-md shadow-gray-200">
           <img
             src="https://img.icons8.com/external-color-outline-adri-ansyah/40/000000/external-islam-islam-and-ramadhan-color-outline-adri-ansyah-24.png"

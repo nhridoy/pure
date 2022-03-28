@@ -1,12 +1,10 @@
 import React from "react";
 // import moment from "moment";
 import moment from "moment-hijri";
-import Header from "./components/Header/Header";
-import Times from "./components/Times/Times";
-import Weather from "./components/Weather/Weather";
-import Dua from "./components/Dua/Dua";
-import Categories from "./components/Categories/Categories";
 import BottomMenu from "./components/BottomMenu/BottomMenu";
+import Home from "./components/Home/Home";
+import { Route, Routes } from "react-router-dom";
+import Mosque from "./components/Mosque/Mosque";
 
 function App() {
   const [seconds, setSeconds] = React.useState(0);
@@ -66,11 +64,21 @@ function App() {
   return (
     <div className="">
       <div className="container mx-auto p-5 bg-blue-50">
-        <Header time={time} dayOfWeek={dayOfWeek} date={date} hijri={hijri} />
-        <Times />
-        <Weather dayOfWeek={dayOfWeek} date={date} />
-        <Dua />
-        <Categories />
+        <Routes>
+          <Route
+            path="/"
+            exact
+            element={
+              <Home
+                time={time}
+                dayOfWeek={dayOfWeek}
+                date={date}
+                hijri={hijri}
+              />
+            }
+          />
+          <Route path="/mosque" element={<Mosque />} />
+        </Routes>
       </div>
       <BottomMenu />
     </div>
