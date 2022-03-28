@@ -5,6 +5,7 @@ import BottomMenu from "./components/BottomMenu/BottomMenu";
 import Home from "./components/Home/Home";
 import { Route, Routes } from "react-router-dom";
 import Mosque from "./components/Mosque/Mosque";
+import AllahNames from "./components/AllahNames/AllahNames";
 
 function App() {
   const [seconds, setSeconds] = React.useState(0);
@@ -39,6 +40,10 @@ function App() {
     return () => clearInterval(interval);
   }, [seconds]);
 
+  React.useEffect(() => {
+    console.log("test");
+  }, []);
+
   const handleTime = () => {
     moment.locale("en-US");
     setDayOfWeek(moment().format("dddd"));
@@ -47,7 +52,6 @@ function App() {
     setTime(moment().format("hh:mm:ss A"));
     // setDayOfWeek(new Date().toLocaleDateString("en-US", { weekday: "long" }));
     // setDate(new Date().toLocaleDateString());
-    setSeconds(seconds + 1);
   };
   const handleGeoLocation = () => {
     navigator.geolocation.watchPosition(
@@ -77,6 +81,7 @@ function App() {
               />
             }
           />
+          <Route path="/allah-names" element={<AllahNames />} />
           <Route path="/mosque" element={<Mosque />} />
         </Routes>
       </div>

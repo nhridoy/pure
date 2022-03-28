@@ -27,7 +27,10 @@ const Categories = () => {
             Nearest Mosque
           </h3>
         </NavLink>
-        <div className="min-w-[30%] bg-white flex flex-col justify-center items-center p-4 rounded-2xl shadow-md shadow-gray-200">
+        <NavLink
+          to="allah-names"
+          className="min-w-[30%] bg-white flex flex-col justify-center items-center p-4 rounded-2xl shadow-md shadow-gray-200"
+        >
           <img
             src="https://img.icons8.com/external-color-outline-adri-ansyah/40/000000/external-islam-islam-and-ramadhan-color-outline-adri-ansyah-24.png"
             alt="Allah Names"
@@ -35,7 +38,7 @@ const Categories = () => {
           <h3 className="text-xs text-center font-semibold pt-4">
             Allah's 99 Names
           </h3>
-        </div>
+        </NavLink>
         <div className="min-w-[30%] bg-white flex flex-col justify-center items-center p-4 rounded-2xl shadow-md shadow-gray-200">
           <img
             src="https://img.icons8.com/external-color-outline-adri-ansyah/40/000000/external-islam-islam-and-ramadhan-color-outline-adri-ansyah-12.png"
