@@ -6,6 +6,7 @@ import Times from "./components/Times/Times";
 import Weather from "./components/Weather/Weather";
 import Dua from "./components/Dua/Dua";
 import Categories from "./components/Categories/Categories";
+import BottomMenu from "./components/BottomMenu/BottomMenu";
 
 function App() {
   const [seconds, setSeconds] = React.useState(0);
@@ -33,12 +34,15 @@ function App() {
     setSeconds(seconds + 1);
   };
   return (
-    <div className="container mx-auto p-5 bg-blue-50">
-      <Header time={time} dayOfWeek={dayOfWeek} date={date} hijri={hijri} />
-      <Times />
-      <Weather dayOfWeek={dayOfWeek} date={date} />
-      <Dua />
-      <Categories />
+    <div className="">
+      <div className="container mx-auto p-5 bg-blue-50">
+        <Header time={time} dayOfWeek={dayOfWeek} date={date} hijri={hijri} />
+        <Times />
+        <Weather dayOfWeek={dayOfWeek} date={date} />
+        <Dua />
+        <Categories />
+      </div>
+      <BottomMenu />
     </div>
   );
 }
