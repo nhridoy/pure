@@ -14,6 +14,24 @@ function App() {
   const [dayOfWeek, setDayOfWeek] = React.useState("");
   const [date, setDate] = React.useState("");
   const [hijri, setHijri] = React.useState("");
+  const [geoLocation, setGeoLocation] = React.useState({});
+
+  React.useEffect(() => {
+    if (navigator.geolocation) {
+      // navigator.geolocation.getCurrentPosition(setGeoLocation);
+      navigator.permissions.query({ name: "geolocation" }).then((result) => {
+        if (result.state === "granted") {
+          handleGeoLocation();
+        } else if (result.state === "prompt") {
+          handleGeoLocation();
+        } else if (result.state === "denied") {
+          //If denied then you have to show instructions to enable location
+        }
+      });
+    } else {
+      alert("Geolocation is not supported by your browser!");
+    }
+  }, []);
 
   React.useEffect(() => {
     const interval = setInterval(() => {
@@ -33,6 +51,18 @@ function App() {
     // setDate(new Date().toLocaleDateString());
     setSeconds(seconds + 1);
   };
+  const handleGeoLocation = () => {
+    navigator.geolocation.watchPosition(
+      (position) => {
+        setGeoLocation(position.coords);
+      },
+      (error) => {
+        console.log(error);
+      },
+      { enableHighAccuracy: true, maximumAge: 0, timeout: Infinity }
+    );
+  };
+  // console.log(geoLocation);
   return (
     <div className="">
       <div className="container mx-auto p-5 bg-blue-50">
