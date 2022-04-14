@@ -620,39 +620,39 @@
       "sun-rise": "06:20 AM",
       "fajr": "05:07 AM",
       "dhuhr": "12:14 PM",
-      "asr": "04:22 PM",
+      "asr": "04:23 PM",
       "maghrib": "06:05 PM",
       "isha": "07:18 PM"
     },
     "03": {
-      "sahri": "05:01 AM",
-      "iftar": "06:05 PM",
-      "sun-rise": "06:20 AM",
+      "sahri": "05:00 AM",
+      "iftar": "06:06 PM",
+      "sun-rise": "06:19 AM",
       "fajr": "05:07 AM",
       "dhuhr": "12:14 PM",
-      "asr": "04:22 PM",
-      "maghrib": "06:05 PM",
-      "isha": "07:18 PM"
+      "asr": "04:23 PM",
+      "maghrib": "06:06 PM",
+      "isha": "07:19 PM"
     },
     "04": {
-      "sahri": "05:01 AM",
-      "iftar": "06:05 PM",
-      "sun-rise": "06:20 AM",
+      "sahri": "04:49 AM",
+      "iftar": "06:06 PM",
+      "sun-rise": "06:18 AM",
       "fajr": "05:07 AM",
-      "dhuhr": "12:14 PM",
-      "asr": "04:22 PM",
-      "maghrib": "06:05 PM",
-      "isha": "07:18 PM"
+      "dhuhr": "12:13 PM",
+      "asr": "04:24 PM",
+      "maghrib": "06:06 PM",
+      "isha": "07:19 PM"
     },
     "05": {
-      "sahri": "05:01 AM",
-      "iftar": "06:05 PM",
-      "sun-rise": "06:20 AM",
+      "sahri": "04:58 AM",
+      "iftar": "06:07 PM",
+      "sun-rise": "06:17 AM",
       "fajr": "05:07 AM",
-      "dhuhr": "12:14 PM",
-      "asr": "04:22 PM",
-      "maghrib": "06:05 PM",
-      "isha": "07:18 PM"
+      "dhuhr": "12:13 PM",
+      "asr": "04:24 PM",
+      "maghrib": "06:07 PM",
+      "isha": "07:20 PM"
     },
     "06": {
       "sahri": "04:57 AM",
